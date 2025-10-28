@@ -1,7 +1,7 @@
 
 {
   "manifest_version": 3,
-  "name": "Comparador Fidelín - Solo AliExpress",
+  "name": "Comparador Fidelín",
   "version": "1.2",
   "description": "Busca el producto de Amazon en AliExpress o por imagen.",
   "permissions": ["tabs", "scripting"],
