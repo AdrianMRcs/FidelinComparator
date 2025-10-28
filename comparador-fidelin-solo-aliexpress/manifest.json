@@ -1,0 +1,27 @@
+
+{
+  "manifest_version": 3,
+  "name": "Comparador Fidelín - Solo AliExpress",
+  "version": "1.2",
+  "description": "Busca el producto de Amazon en AliExpress o por imagen.",
+  "permissions": ["tabs", "scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.com/*",
+        "https://www.amazon.es/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.amazon.de/*",
+        "https://www.amazon.fr/*",
+        "https://www.amazon.it/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "fidelin_icon_16.png",
+    "48": "fidelin_icon_48.png",
+    "128": "fidelin_icon_128.png"
+  }
+}
