@@ -8,12 +8,24 @@ function getProductTitle() {
 
 function createSearchButton(query) {
   const btn = document.createElement("button");
-  btn.innerText = "🔍 Buscar en AliExpress";
+
+  const img = document.createElement("img");
+  img.src = chrome.runtime.getURL("fidelin_icon_16.png");
+  img.alt = "Fidelín";
+  img.style.width = "16px";
+  img.style.height = "16px";
+  img.style.marginRight = "8px";
+  img.style.verticalAlign = "middle";
+
+  btn.appendChild(img);
+  btn.appendChild(document.createTextNode("Buscar en AliExpress"));
   styleButton(btn);
+
   btn.onclick = () => {
     const aliURL = `https://www.aliexpress.com/wholesale?SearchText=${encodeURIComponent(query)}`;
     window.open(aliURL, "_blank");
   };
+
   return btn;
 }
 
