@@ -1,4 +1,4 @@
-# 🧀 Comparador Fidelín – Solo AliExpress
+# 🧀 Comparador Fidelín – Amazon - Aliexpress
 
 Extensión para Google Chrome que te permite buscar rápidamente el mismo producto de Amazon en **AliExpress** o usar **Google Lens** para buscar por imagen.
 
